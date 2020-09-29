@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+img.quran-karim {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.logo-block h1 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Chango', cursive;
+    letter-spacing: 3px;
+}
+ul.list_surahs {
+    list-style-type: none;
+}
+ul.list_surahs > li {
+    cursor: pointer;
+}
+ul.list_surahs > li:hover {
+    filter: invert();
+}
+main {
+    display: flex;
+}
+aside {
+    width: 250px;
+    background-color: lightseagreen;
+    font-family: 'Eagle Lake', cursive;
+}
+aside h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+}
+#current_surah {
+    text-align: center;
+    flex-grow: 1;
+    background-color: #f2f2cb;
+}
+.surah_block {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    width: 642px;
+    display: block;
+    margin: 30px auto;
+}
+.surah_title {
+    font-family: 'Eagle Lake', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ornament {
+    width: 100px;
+}
+p.ayah_text {
+    display: block;
+    width: 600px;
+    margin: 30px auto 0;
+    font-size: 35px;
+}
+p > .ayah_num {
+    direction: rtl;
+    margin: 0 15px 0 0;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+}
+audio.audio_tag {
+    margin-top: 15px;
+    height: 20px;
+    width: 600px;
+    border-radius: 100px;
+    background-color: #f1f1f1;
+}

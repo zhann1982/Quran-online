@@ -5,10 +5,15 @@ let response;
 let goto = function(num) {
   let element = "";
   element +=  `<div class="surah_block surah-${num}">
-                <h3 class="surah_title">${response.data.surahs[num].englishName}</h3>`;
+                <h2 class="surah_title">
+                  <img class="ornament" src="img/ornament.png">
+                    ${response.data.surahs[num].englishName}
+                  <img class="ornament" src="img/ornament.png">
+                </h2>
+                `;
   for (let j = 0; j < response.data.surahs[num].ayahs.length; j++) {
-    element += `<p class="ayah_text">${response.data.surahs[num].ayahs[j].text}</p>`;
-    element += `<audio
+    element += `<p class="ayah_text">${response.data.surahs[num].ayahs[j].text}&zwj;<span class="ayah_num">&zwj;${j+1}</span></p>`;
+    element += `<audio class="audio_tag"
                     controls
                     src="${response.data.surahs[num].ayahs[j].audio}">
                         Your browser does not support the
@@ -28,9 +33,9 @@ xhr.onreadystatechange = function() {
       goto(curr_surah_num);
 
       // List of surahs for aside block
-      let list = `<ul class="list_surahs">`;
+      let list = `<h3>Surahs</h3><ul class="list_surahs">`;
       for (let i = 0; i < response.data.surahs.length; i++) {
-        list += `<li onclick="goto(${i})">Surah ${i+1}: ${response.data.surahs[i].englishName}</li>`;
+        list += `<li onclick="goto(${i})">${i+1} - ${response.data.surahs[i].englishName}</li>`;
       }
       list += `</ul>`;
       document.getElementById("list_of_surahs").innerHTML = list;
