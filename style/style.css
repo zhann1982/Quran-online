@@ -12,14 +12,44 @@ img.quran-karim {
     font-family: 'Chango', cursive;
     letter-spacing: 3px;
 }
+@keyframes spin {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(120deg);}
+    50%  {transform: rotate(240deg);}
+    100% {transform: rotate(360deg);}
+}
+#loader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+#loader div {
+    width: 20px;
+    height: 20px;
+    border-bottom: 7px solid gray;
+    border-top: 7px solid gray;
+    border-left: 7px solid black;
+    border-right: 7px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear 0s infinite normal none;
+}
 ul.list_surahs {
     list-style-type: none;
 }
 ul.list_surahs > li {
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
     padding-left: 15px;
 }
 ul.list_surahs > li:hover {
+    color: black;
+    background-color: #a5f092;
+    border-left: 4px solid #a09003;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.active {
     color: black;
     background-color: #f2f2cb;
     border-left: 4px solid #a09003;
