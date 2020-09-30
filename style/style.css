@@ -17,16 +17,24 @@ ul.list_surahs {
 }
 ul.list_surahs > li {
     cursor: pointer;
+    padding-left: 15px;
 }
 ul.list_surahs > li:hover {
-    filter: invert();
+    color: black;
+    background-color: #f2f2cb;
+    border-left: 4px solid #a09003;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 main {
     display: flex;
 }
 aside {
+    margin: 0;
+    padding: 0;
     width: 250px;
-    background-color: lightseagreen;
+    background-color: rgb(40, 41, 18);
+    color: white;
     font-family: 'Eagle Lake', cursive;
 }
 aside h3 {

@@ -12,7 +12,7 @@ let goto = function(num) {
                 </h2>
                 `;
   for (let j = 0; j < response.data.surahs[num].ayahs.length; j++) {
-    element += `<p class="ayah_text">${response.data.surahs[num].ayahs[j].text}&zwj;<span class="ayah_num">&zwj;${j+1}</span></p>`;
+    element += `<p class="ayah_text">${response.data.surahs[num].ayahs[j].text} <span class="ayah_num">${j+1}</span></p>`;
     element += `<audio class="audio_tag"
                     controls
                     src="${response.data.surahs[num].ayahs[j].audio}">
