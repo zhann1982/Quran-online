@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 img.quran-karim {
     width: 100%;
     margin: 0;
@@ -78,7 +83,7 @@ aside h3 {
     flex-grow: 1;
     background-color: #f2f2cb;
 }
-.surah_block {
+.surah_block, #surah_ayahs {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
