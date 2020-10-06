@@ -97,7 +97,7 @@ aside h3 {
     font-size: 40px;
     font-weight: bold;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .ornament {
