@@ -49,15 +49,15 @@ ul.list_surahs > li {
 }
 ul.list_surahs > li:hover {
     color: black;
-    background-color: #a5f092;
-    border-left: 4px solid #a09003;
+    background-color: #f2f2cb;
+    border-left: 4px solid #42f016;
     box-sizing: border-box;
     padding-left: 20px;
 }
 .active {
     color: black;
     background-color: #f2f2cb;
-    border-left: 4px solid #a09003;
+    border-left: 4px solid #f51313;
     box-sizing: border-box;
     padding-left: 20px;
 }
@@ -83,11 +83,11 @@ aside h3 {
     flex-grow: 1;
     background-color: #f2f2cb;
 }
-.surah_block, #surah_ayahs {
+.surah_block, #surah_text {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     width: 642px;
     display: block;
     margin: 30px auto;
@@ -99,6 +99,9 @@ aside h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#surah_name {
+    margin: 0 20px;
 }
 .ornament {
     width: 100px;

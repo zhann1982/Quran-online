@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quran online</title>
     <link rel="stylesheet" type="text/css" href="style/style.css" as="style">
-    <script src="js/surah.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -14,29 +14,19 @@
             <h1>Quran online</h1>
         </div>
         <nav>
-            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="surah.html">version 2</a></li>
+            </ul>
         </nav>
     </header>
-    
+    <div id="loader"><div class="load_animation"></div></div>
     <main>
         <aside id="list_of_surahs">
             <!-- List of surahs displayed here -->
         </aside>
         <div id="current_surah">
             <!-- Current surah displayed here -->
-            <div id="surah_text">
-                <h2 class="surah_title">
-                    <img class="ornament" src="img/ornament.png">
-                    <span id="surah_name">
-                        <!-- surah name in arabic -->
-                    </span>
-                    <img class="ornament" src="img/ornament.png">
-                </h2>
-                <div id="surah_ayahs">
-                    <div id="loader"><div class="load_animation"></div></div>
-                    <!-- ayahs in arabic -->
-                </div>
-            </div>
         </div>
     </main>
     <footer>
